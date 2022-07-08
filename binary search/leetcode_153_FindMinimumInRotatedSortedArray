@@ -1,0 +1,23 @@
+Find Minimum in Rotated Sorted Array [Medium]
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+
+Solution 1
+[idea]
+Split the array into two blocks, compare each blocks' first or last elements, take smaller one's block and repeat.
+
+[code]
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        low, high = 0, len(nums) - 1
+        while low < high:
+            mid = (low + high) // 2
+            
+            if nums[high] < nums[mid]:
+                low = mid + 1
+            else:
+                high = mid
+                
+        return nums[low]
+
+time complexity : O(logn)
+space complexity : O(1)
