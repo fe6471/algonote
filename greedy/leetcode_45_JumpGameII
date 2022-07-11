@@ -25,9 +25,7 @@ space complexity : O(n)
 
 Solution2
 [idea]
-Let's say it is at ith position with k jumps. Then it can reach i+1 to i+nums[i]th position with k+1 jumps.
-In the next iteration we know from i+1 to max_jump (farthest postion it can jump to from previous iteration) postion have same k+1 jumps.
-So we can start the next iteration at r+1 th position of previous iter.
+Same idea as solution1. But it can skip positions calculated in the previous iteration.
 
 [code]
 class Solution:
