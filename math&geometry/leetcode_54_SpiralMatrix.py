@@ -1,19 +1,19 @@
-Spiral Matrix [Medium]
-https://leetcode.com/problems/spiral-matrix/
+# Spiral Matrix [Medium]
+# https://leetcode.com/problems/spiral-matrix/
 
-Solution1
-[idea]
-Append top row elements from left to right.
-Append right column elements from top to bottom.
-Append bottom row elements from right to left.
-Append left column elements from bottom to top.
-Increase top and left, decrease bottom and right by 1.
-Repeat above steps until top equals bottom or left equals right.
-If the number of rows or columns is odd, there will be remaining matrix (either mx1 or 1xn).
-Append remaining elements through linear scan.
+# Solution1
+# [idea]
+# Append top row elements from left to right.
+# Append right column elements from top to bottom.
+# Append bottom row elements from right to left.
+# Append left column elements from bottom to top.
+# Increase top and left, decrease bottom and right by 1.
+# Repeat above steps until top equals bottom or left equals right.
+# If the number of rows or columns is odd, there will be remaining matrix (either mx1 or 1xn).
+# Append remaining elements through linear scan.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         elements = []
         top, bottom = 0, len(matrix) - 1
@@ -43,17 +43,17 @@ class Solution:
                     elements.append(matrix[i][j])
         return elements
 
-time complexity : O(mn)
-space complexity : O(mn)
+# time complexity : O(mn)
+# space complexity : O(mn)
 
-Solution2
-[idea]
-Pop the first row of matrix.
-Rotate the remaining matrix anticlockwise.
-Repeat until the matrix is empty.
+# Solution2
+# [idea]
+# Pop the first row of matrix.
+# Rotate the remaining matrix anticlockwise.
+# Repeat until the matrix is empty.
 
-[code]
-class Solution:
+# [code]
+class Solution2:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         elements = []
         while matrix:
@@ -63,5 +63,5 @@ class Solution:
         
         return elements
         
-time complexity : O(mn)
-space complexity : O(mn)
+# time complexity : O(mn)
+# space complexity : O(mn)
