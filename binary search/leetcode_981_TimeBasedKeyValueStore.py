@@ -1,11 +1,11 @@
-Time Based Key-Value Store [Medium]
-https://leetcode.com/problems/time-based-key-value-store/
+# Time Based Key-Value Store [Medium]
+# https://leetcode.com/problems/time-based-key-value-store/
 
-Solution 1
-[idea]
-Do binary search. If there is no target, check last searched element and return element less than target.
+# Solution 1
+# [idea]
+# Do binary search. If there is no target, check last searched element and return element less than target.
 
-[code]
+# [code]
 class TimeMap:
 
     def __init__(self):
@@ -39,5 +39,5 @@ class TimeMap:
         else:
             return self.map[key][mid - 1][0]
             
-time complexity : O(logn)
-space complexity: O(n)
+# time complexity : O(logn)
+# space complexity: O(n)
