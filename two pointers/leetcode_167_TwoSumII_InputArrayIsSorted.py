@@ -8,7 +8,7 @@
 # If numbers[idx1] + numbers[idx2] > target, decrease idx2.
 
 # [code]
-class Solution:
+class Solution1:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         idx1, idx2 = 0, len(numbers)-1
         
