@@ -1,13 +1,13 @@
-Longest Consecutive Sequence [medium]
-https://leetcode.com/problems/longest-consecutive-sequence/
+# Longest Consecutive Sequence [medium]
+# https://leetcode.com/problems/longest-consecutive-sequence/
 
-Solution1
-[idea]
-If a (num - 1) not in the array, the num is a start point of one consecutive sequence.
-Find the longest sequence starts at every starting points.
+# Solution1
+# [idea]
+# If a (num - 1) not in the array, the num is a start point of one consecutive sequence.
+# Find the longest sequence starts at every starting points.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def longestConsecutive(self, nums: List[int]) -> int:
         nums = set(nums)
         starts = []
@@ -30,5 +30,5 @@ class Solution:
         
         return longest
         
-time complexity : O(n)
-space complexity : O(n)
+# time complexity : O(n)
+# space complexity : O(n)
