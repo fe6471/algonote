@@ -1,12 +1,12 @@
-Top K Frequent Elements [Medium]
-https://leetcode.com/problems/top-k-frequent-elements/
+# Top K Frequent Elements [Medium]
+# https://leetcode.com/problems/top-k-frequent-elements/
 
-Solution1
-[idea]
-Calculate frequencies and sort.
+# Solution1
+# [idea]
+# Calculate frequencies and sort.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         res = []
         frequency = {}
@@ -20,16 +20,16 @@ class Solution:
             
         return res
         
-time complexity : O(nlogn)
-space complexity : O(n)
+# time complexity : O(nlogn)
+# space complexity : O(n)
 
-Solution2
-[idea]
-Similar idea, but don't need to sort the actual frequncy list of which time complexity is O(nlogn).
-Just make extra space to store number by frequency in corresponding index of the array while searching frequency list which takes O(n) time.
+# Solution2
+# [idea]
+# Similar idea, but don't need to sort the actual frequncy list of which time complexity is O(nlogn).
+# Just make extra space to store number by frequency in corresponding index of the array while searching frequency list which takes O(n) time.
 
-[code]
-class Solution:
+# [code]
+class Solution2:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         res = []
         frequency = {}
@@ -46,5 +46,5 @@ class Solution:
             if len(res) == k:
                 return res
                 
-time complexity : O(n)
-space complexity : O(n)
+# time complexity : O(n)
+# space complexity : O(n)
