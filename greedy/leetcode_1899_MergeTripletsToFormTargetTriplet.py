@@ -1,13 +1,13 @@
-Merge Triplets to Form Target Triplet [Medium]
-https://leetcode.com/problems/merge-triplets-to-form-target-triplet/
+# Merge Triplets to Form Target Triplet [Medium]
+# https://leetcode.com/problems/merge-triplets-to-form-target-triplet/
 
-Solution1
-[idea]
-If any value of a triplet is greater than each corresponding values of target, it has no use, so skip it.
-And then check if remaining triplets contain target values.
+# Solution1
+# [idea]
+# If any value of a triplet is greater than each corresponding values of target, it has no use, so skip it.
+# And then check if remaining triplets contain target values.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         X, Y, Z = False, False, False
 
@@ -26,5 +26,5 @@ class Solution:
         else:
             return True
             
-time complexity : O(n)
-space complexity : O(1)
+# time complexity : O(n)
+# space complexity : O(1)
