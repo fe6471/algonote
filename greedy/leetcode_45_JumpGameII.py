@@ -1,12 +1,12 @@
-Jump Game II [Medium]
-https://leetcode.com/problems/jump-game-ii/
+# Jump Game II [Medium]
+# https://leetcode.com/problems/jump-game-ii/
 
-Solution1
-[idea]
-If it reached ith position with k jupms, it can reach i+1 to i+nums[i]th position with k+1 jumps.
+# Solution1
+# [idea]
+# If it reached ith position with k jupms, it can reach i+1 to i+nums[i]th position with k+1 jumps.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def jump(self, nums: List[int]) -> int:
         DP = [0]*len(nums)
         
@@ -20,15 +20,15 @@ class Solution:
                 
         return DP[-1]
         
-time complexity : O(n^2)
-space complexity : O(n)
+# time complexity : O(n^2)
+# space complexity : O(n)
 
-Solution2
-[idea]
-Same idea as solution1. But it can skip positions calculated in the previous iteration.
+# Solution2
+# [idea]
+# Same idea as solution1. But it can skip positions calculated in the previous iteration.
 
-[code]
-class Solution:
+# [code]
+class Solution2:
     def jump(self, nums: List[int]) -> int:        
         l, r = 0, 0
         cnt = 0
@@ -42,5 +42,5 @@ class Solution:
                 
         return cnt
         
-time complexity : O(n)
-space complexity : O(1)
+# time complexity : O(n)
+# space complexity : O(1)
