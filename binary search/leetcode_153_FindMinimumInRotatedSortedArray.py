@@ -1,12 +1,12 @@
-Find Minimum in Rotated Sorted Array [Medium]
-https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+# Find Minimum in Rotated Sorted Array [Medium]
+# https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 
-Solution 1
-[idea]
-Split the array into two blocks, compare each blocks' first or last elements, take smaller one's block and repeat.
+# Solution 1
+# [idea]
+# Split the array into two blocks, compare each blocks' first or last elements, take smaller one's block and repeat.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def findMin(self, nums: List[int]) -> int:
         low, high = 0, len(nums) - 1
         while low < high:
@@ -19,15 +19,15 @@ class Solution:
                 
         return nums[low]
 
-time complexity : O(logn)
-space complexity : O(1)
+# time complexity : O(logn)
+# space complexity : O(1)
 
-Solution 2
-[idea]
-same idea, easier to understand
+# Solution 2
+# [idea]
+# same idea, easier to understand
 
-[code]
-class Solution:
+# [code]
+class Solution2:
     def findMin(self, nums: List[int]) -> int:
         if len(nums) == 1 or nums[0] < nums[-1]:
             return nums[0]
@@ -42,5 +42,5 @@ class Solution:
             else:
                 right = mid - 1  # search the minimum in the left side
                 
-time complexity : O(logn)
-space complexity : O(1)
+# time complexity : O(logn)
+# space complexity : O(1)
