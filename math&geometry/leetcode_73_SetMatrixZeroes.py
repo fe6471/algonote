@@ -1,21 +1,21 @@
-Set Matrix Zeroes [Medium]
-https://leetcode.com/problems/set-matrix-zeroes/
+# Set Matrix Zeroes [Medium]
+# https://leetcode.com/problems/set-matrix-zeroes/
 
-Solution1 - brute force
-[idea]
-Copy the given matrix.
-If matrix[i][j] is 0, change the every elements of i th row and j th colum of copied matrix into 0.
+# Solution1 - brute force
+# [idea]
+# Copy the given matrix.
+# If matrix[i][j] is 0, change the every elements of i th row and j th colum of copied matrix into 0.
 
-time complexity : O(mn)
-space complexity : O(mn)
+# time complexity : O(mn)
+# space complexity : O(mn)
 
-Solution2 - more optimized O(m+n) space
-[idea]
-Store rows and columns indices of zero elements.
-Change the elements of stored rows and columns into 0.
+# Solution2 - more optimized O(m+n) space
+# [idea]
+# Store rows and columns indices of zero elements.
+# Change the elements of stored rows and columns into 0.
 
-[code]
-class Solution:
+# [code]
+class Solution2:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         rows = set()
         columns = set()
@@ -33,16 +33,16 @@ class Solution:
             for i in range(len(matrix)):
                 matrix[i][column] = 0
                 
-time complexity : O(mn)
-space complexity : O(m + n)
+# time complexity : O(mn)
+# space complexity : O(m + n)
 
-Solution3 - most optimized O(1) space
-[idea]
-Store flags in the first row and column of the matrix itself.
-Since matrix[0][0] is overlapped when storing first row's and column's flag, need extra space of O(1).
+# Solution3 - most optimized O(1) space
+# [idea]
+# Store flags in the first row and column of the matrix itself.
+# Since matrix[0][0] is overlapped when storing first row's and column's flag, need extra space of O(1).
 
-[code]
-class Solution:
+# [code]
+class Solution3:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         rows, columns = len(matrix), len(matrix[0])
         first_row_zero = False
@@ -68,5 +68,5 @@ class Solution:
         if first_row_zero:
             matrix[0] = [0]*columns
             
-time complexity : O(mn)
-space complexity : O(1)
+# time complexity : O(mn)
+# space complexity : O(1)
