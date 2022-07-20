@@ -6,7 +6,7 @@
 # Binary Exponentiation
 
 # [code]
-class Solution:
+class Solution1:
     def myPow(self, x: float, n: int) -> float:
         if n < 0:
             x = 1/x
