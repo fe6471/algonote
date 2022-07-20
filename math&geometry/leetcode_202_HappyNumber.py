@@ -1,12 +1,12 @@
-Happy Number [Easy]
-https://leetcode.com/problems/happy-number/
+# Happy Number [Easy]
+# https://leetcode.com/problems/happy-number/
 
-Solution1
-[idea]
-A number either goes to 1 or infinite loop while going thorugh given process.
-If the number becomes one of the numbers already seen, it is going into infinite loop.
+# Solution1
+# [idea]
+# A number either goes to 1 or infinite loop while going thorugh given process.
+# If the number becomes one of the numbers already seen, it is going into infinite loop.
 
-[code]
+# [code]
 class Solution:
     def isHappy(self, n: int) -> bool:
         seen = {n}
@@ -22,5 +22,5 @@ class Solution:
                 seen.add(n)
         return True
         
-time complexity : O(logn)
-space complexity : O(logn)
+# time complexity : O(logn)
+# space complexity : O(logn)
