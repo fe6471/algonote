@@ -1,15 +1,15 @@
-Partition Labels [Medium]
-https://leetcode.com/problems/partition-labels/
+# Partition Labels [Medium]
+# https://leetcode.com/problems/partition-labels/
 
-Solution1
-[idea]
-Find first character and its last position. -> one partition
-Check all characters' last positions in the partition.
-If it's greater than current last position, update it until it reaches end of the partition.
-Repeat above steps starts from next character of the partition.
+# Solution1
+# [idea]
+# Find first character and its last position. -> one partition
+# Check all characters' last positions in the partition.
+# If it's greater than current last position, update it until it reaches end of the partition.
+# Repeat above steps starts from next character of the partition.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def partitionLabels(self, s: str) -> List[int]:
         res = []
         chars = {}
@@ -35,5 +35,5 @@ class Solution:
             
         return res
         
-time complexity : O(n)
-space complexity : O(n)
+# time complexity : O(n)
+# space complexity : O(n)
