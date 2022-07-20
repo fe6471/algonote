@@ -1,11 +1,11 @@
-Maximum Subarray [Easy]
-https://leetcode.com/problems/maximum-subarray/
+# Maximum Subarray [Easy]
+# https://leetcode.com/problems/maximum-subarray/
 
-[idea]
-Negative sum has no use to the next value, so break.
+# [idea]
+# Negative sum has no use to the next value, so break.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def maxSubArray(self, nums: List[int]) -> int:
         max_sum = float('-inf')
         curr_sum = float('-inf')
@@ -20,5 +20,5 @@ class Solution:
         
         return max_sum
         
-time complexity : O(n)
-space complexity : O(1)
+# time complexity : O(n)
+# space complexity : O(1)
