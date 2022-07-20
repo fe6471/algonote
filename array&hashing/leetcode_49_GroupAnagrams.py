@@ -1,12 +1,12 @@
-Group Anagrams [Medium]
-https://leetcode.com/problems/group-anagrams/
+# Group Anagrams [Medium]
+# https://leetcode.com/problems/group-anagrams/
 
-Solution1
-[idea]
-A same group of anagrams has same numbers of characters.
+# Solution1
+# [idea]
+# A same group of anagrams has same numbers of characters.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagrams = {}
         
@@ -19,5 +19,5 @@ class Solution:
                 
         return anagrams.values()
         
-time complexity : O(nlogm)
-space complexity : O(n)
+# time complexity : O(nlogm)
+# space complexity : O(n)
