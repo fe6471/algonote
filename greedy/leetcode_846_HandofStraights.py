@@ -1,14 +1,14 @@
-Hand of Straights [Medium]
-https://leetcode.com/problems/hand-of-straights/
+# Hand of Straights [Medium]
+# https://leetcode.com/problems/hand-of-straights/
 
-Solution1
-[idea]
-Find smallest number n.
-Remove n, n+1, n+2, ... , n+groupSize-1 from the array.
-Repeat until the array is empty.
+# Solution1
+# [idea]
+# Find smallest number n.
+# Remove n, n+1, n+2, ... , n+groupSize-1 from the array.
+# Repeat until the array is empty.
 
-[code]
-class Solution:
+# [code]
+class Solution1:
     def isNStraightHand(self, hand: List[int], groupSize: int) -> bool:
         if len(hand) % groupSize != 0:
             return False
@@ -42,5 +42,5 @@ class Solution:
 
         return True
         
-time complexity : O(nlogn)
-space complexity : O(n)
+# time complexity : O(nlogn)
+# space complexity : O(n)
