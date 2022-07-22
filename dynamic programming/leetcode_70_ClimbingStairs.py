@@ -5,6 +5,7 @@
 # [idea]
 # If k is the number of 2 steps, it is choosing k places from (n - k) possible candidates.
 # Which equals to combination(n - k, k).
+# All possible k is from 0 to n//2.
 
 # [code]
 class Solution1:
@@ -12,10 +13,8 @@ class Solution1:
         from math import comb
         
         cnt = 0
-        k = 0
-        while k <= n - k:
+        for k in range(n//2 + 1):
             cnt += comb(n-k, k) 
-            k += 1
             
         return cnt
       
