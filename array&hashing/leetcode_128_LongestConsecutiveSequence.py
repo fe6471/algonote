@@ -7,7 +7,7 @@
 # Find the longest sequence starts at every starting points.
 
 # [code]
-class Solution1:
+class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         nums = set(nums)
         starts = []
