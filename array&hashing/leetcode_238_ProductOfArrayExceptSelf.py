@@ -9,7 +9,7 @@
 # Repeat above step backward again, then res[i] contains also product of nums[i + 1] to nums[n - 1].
 
 # [code]
-class Solution1:
+class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1]*len(nums)
         
