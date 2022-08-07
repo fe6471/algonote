@@ -7,7 +7,7 @@
 # While searching a row, if a number (i, j) is in current row[i] or column[j] or box[i//3][j//3], return False.
 
 # [code]
-class Solution1:
+class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:        
         columns = [set() for i in range(9)]
         boxes = [[set() for i in range(3)] for j in range(3)]
