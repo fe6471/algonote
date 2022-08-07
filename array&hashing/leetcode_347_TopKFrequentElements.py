@@ -6,7 +6,7 @@
 # Calculate frequencies and sort.
 
 # [code]
-class Solution1:
+class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         res = []
         frequency = {}
@@ -29,7 +29,8 @@ class Solution1:
 # Just make extra space to store number by frequency in corresponding index of the array while searching frequency list which takes O(n) time.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         res = []
         frequency = {}
@@ -45,6 +46,6 @@ class Solution2:
             res += n
             if len(res) == k:
                 return res
-                
+'''
 # time complexity : O(n)
 # space complexity : O(n)
