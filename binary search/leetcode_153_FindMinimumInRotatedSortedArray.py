@@ -6,7 +6,7 @@
 # Split the array into two blocks, compare each blocks' first or last elements, take smaller one's block and repeat.
 
 # [code]
-class Solution1:
+class Solution:
     def findMin(self, nums: List[int]) -> int:
         low, high = 0, len(nums) - 1
         while low < high:
@@ -27,7 +27,8 @@ class Solution1:
 # same idea, easier to understand
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def findMin(self, nums: List[int]) -> int:
         if len(nums) == 1 or nums[0] < nums[-1]:
             return nums[0]
@@ -41,6 +42,6 @@ class Solution2:
                 left = mid + 1
             else:
                 right = mid - 1  # search the minimum in the left side
-                
+'''      
 # time complexity : O(logn)
 # space complexity : O(1)
