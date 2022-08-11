@@ -6,7 +6,7 @@
 # Find a row containing target (binary search) and then find the target inside the row (binary search).
 
 # [code]
-class Solution1:
+class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         low, high, mid = 0, len(matrix) - 1, 0
         while low <= high:
@@ -43,7 +43,8 @@ class Solution1:
 # ith element of second matrix is same as i//m row, i%m column of the first matrix where m is the number of its columns.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         m, n = len(matrix[0]), len(matrix)
         low, high = 0, m*n - 1
@@ -58,6 +59,6 @@ class Solution2:
                 return True
         
         return False
-
+'''
 # time complexity : O(logmn)
 # space complexity : O(1)
