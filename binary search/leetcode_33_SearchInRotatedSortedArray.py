@@ -7,7 +7,7 @@
 # Move elements in the array k times and then find target using binary search.
 
 # [code]
-class Solution1:
+class Solution:
     def search(self, nums: List[int], target: int) -> int:
         # finding k
         low, high = 0, len(nums) - 1
@@ -54,7 +54,8 @@ class Solution1:
 # Note! No need to change the actual array. Just adjust the range while doing binary search.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def search(self, nums: List[int], target: int) -> int:
         low, high = 0, len(nums)
         while low < high:
@@ -72,6 +73,6 @@ class Solution2:
                 return mid
         
         return -1
-        
+'''
 # time complexity = O(logn)
 # space complexity = O(1)
