@@ -8,7 +8,7 @@
 # Apply binary search finding k within the range 1 to max(piles).
 
 # [code]
-class Solution1:
+class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         import math
         low, high = 1, max(piles)
