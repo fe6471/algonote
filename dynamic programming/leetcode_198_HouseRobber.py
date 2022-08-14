@@ -6,7 +6,7 @@
 # For ith house, it can be choosed either nums[i] + rob[0:i - 2] or rob[0:i - 1].
 
 # [code]
-class Solution1:
+class Solution:
     def rob(self, nums: List[int]) -> int:
         rob1, rob2 = 0, 0
         
