@@ -7,7 +7,7 @@
 # Choose either house[0] or house[n-1] then it becomes 'House Robber I'.
 
 # [code]
-class Solution1:
+class Solution:
     def rob(self, nums: List[int]) -> int:
         return max(nums[0], self.house_robber_1(nums[:-1]), self.house_robber_1(nums[1:])) # edge case when len(nums) = 1 -> nums[0]
         
