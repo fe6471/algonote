@@ -6,7 +6,7 @@
 # If a substring is palindromic and its left char and right char are same, 'left char + substring + right char' is also palindromic.
 
 # [code]
-class Solution1:
+class Solution:
     def longestPalindrome(self, s: str) -> str:
         longest = ''
         
