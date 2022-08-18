@@ -8,7 +8,7 @@
 # All possible k is from 0 to n//2.
 
 # [code]
-class Solution1:
+class Solution:
     def climbStairs(self, n: int) -> int:
         from math import comb
         
@@ -30,7 +30,8 @@ class Solution1:
 # It is not redundant since the final steps are different.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def climbStairs(self, n: int) -> int:
         if n == 1:
             return 1
@@ -46,6 +47,6 @@ class Solution2:
             n1 = cnt
             
         return cnt
-      
+'''
 # time complexity : O(n)
 # space complexity : O(1)
