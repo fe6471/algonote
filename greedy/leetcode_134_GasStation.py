@@ -11,7 +11,7 @@
 # So that it should start at the next position where tank[i] is minimum.
 
 # [code]
-class Solution1:
+class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         tank = 0
         min_tank = 0
@@ -37,7 +37,8 @@ class Solution1:
 # If tank goes negative while it going from A to B, from any position between A and B cannot reach B. So we restart at the next position.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         if sum(gas) < sum(cost):
             return -1
@@ -51,6 +52,6 @@ class Solution2:
                 start = i + 1
                 
         return start
-        
+'''
 # time complexity : O(n)
 # space complexity : O(1)
