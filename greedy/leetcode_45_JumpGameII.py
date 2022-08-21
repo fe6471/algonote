@@ -6,7 +6,7 @@
 # If it reached ith position with k jupms, it can reach i+1 to i+nums[i]th position with k+1 jumps.
 
 # [code]
-class Solution1:
+class Solution:
     def jump(self, nums: List[int]) -> int:
         DP = [0]*len(nums)
         
@@ -28,7 +28,8 @@ class Solution1:
 # Same idea as solution1. But it can skip positions calculated in the previous iteration.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def jump(self, nums: List[int]) -> int:        
         l, r = 0, 0
         cnt = 0
@@ -41,6 +42,6 @@ class Solution2:
             cnt += 1
                 
         return cnt
-        
+'''
 # time complexity : O(n)
 # space complexity : O(1)
