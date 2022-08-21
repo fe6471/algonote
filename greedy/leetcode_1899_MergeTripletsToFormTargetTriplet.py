@@ -7,7 +7,7 @@
 # And then check if remaining triplets contain target values.
 
 # [code]
-class Solution1:
+class Solution:
     def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         X, Y, Z = False, False, False
 
