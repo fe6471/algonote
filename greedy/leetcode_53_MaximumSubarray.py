@@ -5,7 +5,7 @@
 # Negative sum has no use to the next value, so break.
 
 # [code]
-class Solution1:
+class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         max_sum = float('-inf')
         curr_sum = float('-inf')
