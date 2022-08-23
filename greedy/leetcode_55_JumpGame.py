@@ -7,7 +7,7 @@
 # If i is bigger than max_reach, it cannot reach the position.
 
 # [code]
-class Solution1:
+class Solution:
     def canJump(self, nums: List[int]) -> bool:
         max_reach = 0
         for i, num in enumerate(nums):
