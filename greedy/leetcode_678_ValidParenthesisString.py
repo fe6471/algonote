@@ -11,7 +11,7 @@
 # If min left goes negative, consider one of passed *s is not ) but _ so reset the min left to 0.
 
 # [code]
-class Solution1:
+class Solution:
     def checkValidString(self, s: str) -> bool:
         min_left, max_left = 0, 0
         for ch in s:
@@ -42,7 +42,8 @@ class Solution1:
 # If the counters didn't go neagtive in both operations, return True
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def checkValidString(self, s: str) -> bool:
         left = 0
         for ch in s:
@@ -63,6 +64,6 @@ class Solution2:
                 return False
             
         return True
-        
+'''
 # time complexity : O(n)
 # space complexity : O(1)
