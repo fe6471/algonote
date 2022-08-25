@@ -9,7 +9,7 @@
 # Repeat above steps starts from next character of the partition.
 
 # [code]
-class Solution1:
+class Solution:
     def partitionLabels(self, s: str) -> List[int]:
         res = []
         chars = {}
