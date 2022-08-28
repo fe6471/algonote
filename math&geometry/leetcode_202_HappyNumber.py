@@ -7,7 +7,7 @@
 # If the number becomes one of the numbers already seen, it is going into infinite loop.
 
 # [code]
-class Solution1:
+class Solution:
     def isHappy(self, n: int) -> bool:
         seen = {n}
         while n > 1:
