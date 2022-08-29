@@ -18,7 +18,8 @@
 # [2] -> [2,2], [2]
 # [] -> [2], []           # duplicate
 
-# there are 2^n subsets and each subsets' time complexity is its length n at most, so the time complexity is O(n2^n).
+# there are 2^n subsets and each subsets' time complexity is its length n at most because of deep copy. 
+# so the time complexity is O(n2^n).
 
 # [code]
 class Solution:
