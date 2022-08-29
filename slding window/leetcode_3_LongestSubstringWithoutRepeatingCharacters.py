@@ -7,7 +7,7 @@
 # Or slide the window of substring starting next to the character.
 
 # [code]
-class Solution1:
+class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         answer = 0
         substring = ''
@@ -33,7 +33,8 @@ class Solution1:
 # If a character is already in the hash map and its index is greater than start point, update the start pointer.
 
 # [code]
-class Solution2:
+'''
+class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         max_length = 0
         chars = {}
@@ -48,7 +49,6 @@ class Solution2:
             chars[ch] = i
             
         return max_length
-      
-
+'''
 # time complexity : O(n)
 # space complexity : O(n)
