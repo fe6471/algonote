@@ -6,7 +6,7 @@
 # length = number of most common character + k
 
 # [code]
-class Solution1:
+class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         max_length = 0
         chars = {}
