@@ -7,7 +7,7 @@
 # Otherwise just push into a stack.
 
 # [code]
-class Solution1:
+class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         stack = []
         operator = {'+', '-', '*', '/'}
