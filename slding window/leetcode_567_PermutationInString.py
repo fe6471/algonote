@@ -6,7 +6,7 @@
 # If each number of characters of string A is equal to string B's, A is permutation of B.
 
 # [code]
-class Solution1:
+class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         l1 = [0]*26
         for ch in s1:
