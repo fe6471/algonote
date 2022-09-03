@@ -8,7 +8,7 @@
 # _ ( _ ) _  possible places are notated as '_' in result of n = 1.
 
 # [code]
-class Solution1:
+class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         res = {'()'}
         
