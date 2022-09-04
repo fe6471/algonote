@@ -8,7 +8,7 @@
 # While j going through from 1 to n-2, if sum is greater than 0, decrease k or if less than, increase i until i = j or k = j.
 
 # [code]
-class Solution1:
+class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         triplets = set()
     
@@ -42,6 +42,7 @@ class Solution1:
 # Same idea but skip some indices if a number equals to previous one to avoid duplicates.
 
 # [code]
+'''
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         triplets = []
@@ -72,6 +73,6 @@ class Solution:
                     k -= 1
                     
         return triplets
-      
+'''
 # time complexity : O(n^2)
 # space complexity : O(combination(n,3))
