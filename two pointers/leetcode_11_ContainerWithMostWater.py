@@ -7,7 +7,7 @@
 # To possibly increase the amount, move index of minimum height.
 
 # [code]
-class Solution1:
+class Solution:
     def maxArea(self, height: List[int]) -> int:
         max_amount = 0
         i, j = 0, len(height) - 1
